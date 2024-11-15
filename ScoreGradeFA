@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class ScoreGradeFA{
+    // Dylan Gabriel Santos
+    public static void main( String[] args){
+        Scanner s = new Scanner(System.in);
+        int grade;
+
+        System.out.print("Please enter your score or grade:  ");
+        grade = s.nextInt();
+
+        if( grade >= 90){
+            System.out.print("Grade A");
+        }else if( grade>=80 && grade<=89){
+            System.out.print("Grade B");
+        }else if( grade>= 70 && grade<=79){
+            System.out.print("Grade C");
+        }else if( grade>=60 && grade<=69){
+            System.out.print("Grade D");
+        }else if(grade <=60){
+            System.out.print("Grade F");
+        }
+
+
+    }
+}
